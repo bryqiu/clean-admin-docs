@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress';
 import { navConfig, sidebarConfig } from './config/export';
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons';
+import {pathResolve} from './utils'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -11,6 +12,12 @@ export default defineConfig({
   srcDir: 'src',
   vite: {
     plugins: [groupIconVitePlugin()],
+    resolve:{
+      alias: {
+        '@comp': pathResolve('.vitepress/components'),
+      },
+      extensions: ['.js', '.ts', '.jsx', '.tsx', '.json'],
+    }
   },
   head: [
     ['link', { rel: 'icon', href: '/icons/logo.svg' }],
