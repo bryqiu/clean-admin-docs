@@ -3,7 +3,6 @@ import type { Theme } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 import './styles/index.css';
 import 'virtual:group-icons.css';
-// import '../../../src/styles/common/tailwind.css';
 
 export default {
   extends: DefaultTheme,

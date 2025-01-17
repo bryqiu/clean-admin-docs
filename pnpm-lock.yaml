@@ -15,6 +15,15 @@ importers:
         specifier: ^3.4.37
         version: 3.5.13
     devDependencies:
+      autoprefixer:
+        specifier: ^10.4.20
+        version: 10.4.20(postcss@8.5.1)
+      postcss:
+        specifier: ^8.5.1
+        version: 8.5.1
+      tailwindcss:
+        specifier: ^3.4.17
+        version: 3.4.17
       vitepress:
         specifier: ^1.5.0
         version: 1.5.0(@algolia/client-search@5.19.0)(postcss@8.5.1)(search-insights@2.17.3)
