@@ -17,7 +17,7 @@ const getSidebarGuide = (): DefaultTheme.SidebarItem[] => {
     },
     {
       text: '工程配置',
-      base: '/guide/project/',
+      base: '/guide/project',
       items: [
         { text: '工程概述', link: '/overview' },
         { text: '构建工具-Vite', link: '/build-tool' },
