@@ -15,6 +15,7 @@ export default defineConfig({
     resolve:{
       alias: {
         '@comp': pathResolve('.vitepress/components'),
+        '@public': pathResolve('src/public'),
       },
       extensions: ['.js', '.ts', '.jsx', '.tsx', '.json'],
     }
