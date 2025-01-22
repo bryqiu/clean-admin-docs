@@ -4,8 +4,6 @@
 
 ## 基本开发环境
 
-> 如果你已经具备以下开发环境，可选择跳过这一章节
-
 ### Node 环境
 
 ClanAdmin 使用的技术栈较新，因此你的 Node 环境不要低于 `v18.20.5`，这里推荐使用 `v20.18.1(LTS)` 版本及以上，去到 [Node官方下载](https://nodejs.org/zh-cn/download)

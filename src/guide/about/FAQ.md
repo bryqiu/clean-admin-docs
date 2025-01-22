@@ -1,16 +1,14 @@
-# 常见问题
 
-这里记录在项目中遇到大家可能遇到的问题，方便大家查找。
+# 常见问题 (FAQ)
+这里记录大家在项目中可能遇到的问题
 
-## 写在前面
+## 寻求帮助前的建议
+在提交问题之前,我们建议您首先尝试以下途径来寻找解决方案:
 
-在你向我们反馈问题之前，我们推荐你先尝试以下方法：
+- 使用搜索引擎(如 Google、Bing)检索相关问题
+- 在专业技术社区(如 Stack Overflow)查找类似问题与解答
+- 借助 AI 助手(如 ChatGPT、Claude)获取建议
+- 咨询有经验的开发者或技术专家
+- 参与相关技术讨论组
 
-- 通过搜索引擎搜索你的问题，比如 [Google](https://www.google.com/)、[Bing](https://www.bing.com/)
-- 通过问答社区寻找答案，比如 [Stack Overflow](https://stackoverflow.com/)
-- 通过 Ai 工具寻找答案，比如 [ChatGPT](https://chatgpt.com/)、[Claude](https://claude.ai/)
-- 请教社群小伙伴、身边大佬等
-
-如果没有找到你想要的答案，你也可以尝试通过 CleanAdmin 的 Issues 向我们反馈问题，感谢支持！
-
-## 问题列表
+## 常见问题列表
