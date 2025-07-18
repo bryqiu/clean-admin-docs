@@ -3,3 +3,164 @@ title: 项目简介
 sidebar:
   order: 1
 ---
+
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+## 什么是 Vue Clean Admin？
+
+Vue Clean Admin 是一个中后台管理开发模板，它基于 Vue3 + Vite + TypeScript + Element
+Plus 构建，旨在为开发者提供开箱即用，高效、可靠的中后台解决方案
+
+项目特性介绍：
+
+- **完善的工程：**
+  现代化前端技术栈，全量 TypeScript 类型安全，完善的工程配置与开发规范，开箱即用的项目架构，易于扩展和维护
+- **丰富的功能模块：**，内置细粒度权限设计、CRUD 快速开发、i18n 国际化、高质量组件封装、灵活主题系统、基于 ApiFox 的 Mock 数据
+- **视觉设计：**，不算太丑的现代化 UI 设计，不算糟糕的视觉体验、用户体验
+- **文档帮助：**，提供配套文档、[建设指南专栏](#文档及配套专栏)，助力开发者快速上手和深入学习
+
+无论是个人开发者还是企业，Clean Admin 都能为你提供一个优秀的中后台解决方案
+
+想要快速体验 Clean Admin ，可以点击下方链接进行预览 ↓
+
+<LinkCard
+  title="Clean Admin 在线预览"
+  href="https://github.com/bryqiu/vue-clean-admin"
+  target="_blank"
+/>
+
+GitHub 源码地址，喜欢请点 Star 支持我的开发
+
+<LinkCard
+  title="Clean Admin - GitHub 源码"
+  href="https://github.com/bryqiu/vue-clean-admin"
+  target="_blank"
+/>
+
+## 技术生态
+
+开发者在选择中后台模板时，很需要考虑的是使用了什么技术来实现，这个技术我是否熟悉，是否能够快速上手
+
+这里列出 Clean Admin 主要技术生态：
+
+- Vue3 + Vite + TypeScript + Element Plus - 基础构建
+- Tailwind CSS - 样式框架
+- Pinia + pinia-plugin-persistedstate - 状态管理、持久化存储
+- Vue Router - 路由管理
+- Axios - HTTP 请求库
+- Echarts - 图表库
+- VueUse/Lodash-es - 组合式工具函数库、经典工具库(ESM)
+
+你需要对以上技术有一定的了解，但不需要多精通
+
+帮助你快速上手，是 Clean Admin 在做的事，你只需要专注于业务逻辑的实现
+
+完整的技术内容，你可以找到 Clean Admin 根目录下的 `package.json` 文件查看 ↓
+
+<LinkCard
+  title="vue-clean-admin/package.json"
+  href="https://github.com/bryqiu/vue-clean-admin/blob/main/package.json"
+  target="_blank"
+/>
+
+如果你想在本地跑起 Clean Admin，那你应该看看【快速开始】 ↓
+
+<LinkCard title="Clean Admin 快速开始" href="/guides/quick-start" />
+
+## 如何"食用"本文档
+
+Clean Admin 的文档是基于 Astro + Starlight 构建的，Starlight 是在 Astro 框架之上构建的一个文档主题
+
+> 想要帮助 Clean Admin 完善文档，不意味着你需要懂 Astro、Starlight，只需要懂 Markdown 语法即可
+
+左侧目录栏主要分为五个部分：
+
+- **入门指南**：想要了解并上手此项目的开发者，都应该先看看此部分
+- **功能模块**：介绍 Clean Admin 中实现的功能模块，开发者会特别关注此部分
+- **工程配置**：Clean Admin 项目的工程化配置，比如 Vite、类型系统、包管理工具
+- **规范与约定**："没有规矩，不成方圆"，介绍项目正在严格遵守的规范准则
+- **资源与支持**：项目相关的资源内容，或许有开发者想要找的内容
+
+## 《通俗易懂的中后台系统建设指南》
+
+在开发 Clean
+Admin 过程中，我记录了部分内容并总结成专栏文章《通俗易懂的中后台系统建设指南》，发布在以下平台：
+
+<CardGrid>
+  <LinkCard title="GitHub Blog" href="https://github.com/bryqiu/Blog" target="_blank" />
+  <LinkCard
+    title="稀土掘金-专栏"
+    href="https://juejin.cn/user/1860000042121212121212121212121212121212"
+    target="_blank"
+  />
+  <LinkCard title="思否-专栏" href="https://segmentfault.com/u/bryqiu" target="_blank" />
+</CardGrid>
+
+目前包括以下内容：
+
+1. <a href="https://github.com/bryqiu/Blog/issues/1" target="_blank">
+     收下这份 Vue + TS + Vite 中后台系统搭建指南，从此不再害怕建项目
+   </a>
+2. <a href="https://github.com/bryqiu/Blog/issues/2" target="_blank">
+     中后台开发必修课：Vue 项目中 Pinia 与 Router 完全攻略
+   </a>
+3. <a href="https://github.com/bryqiu/Blog/issues/3" target="_blank">
+     用了这些 Vite 配置技巧，同事都以为我开挂了
+   </a>
+4. <a href="https://github.com/bryqiu/Blog/issues/4" target="_blank">
+     受够了团队代码风格不统一？7千字教你从零搭建代码规范体系
+   </a>
+5. <a href="https://github.com/bryqiu/Blog/issues/5" target="_blank">
+     开发者必看！在团队中我是这样实现 Git 提交规范化的
+   </a>
+6. <a href="https://github.com/bryqiu/Blog/issues/6" target="_blank">
+     告别繁琐！Vue3 组合式函数解锁 Echarts 封装新姿势
+   </a>
+7. <a href="https://github.com/bryqiu/Blog/issues/7" target="_blank">
+     彻底搞懂面包屑，手把手封装一个 Vue3 面包屑导航组件
+   </a>
+
+## 作者
+
+- [@Bryan Qiu](https://github.com/bryqiu)
+
+## 参与贡献
+
+Clean Admin 是一个开源项目，我们非常欢迎你的关注与贡献，哪怕是一个错别字
+
+如果你还不清楚如何参与到 Clean Admin 开源项目中，可以查看贡献指南 ↓
+
+<LinkCard title="Clean Admin 贡献指南" href="/abouts/contribution" />
+
+## 帮助与交流
+
+在使用过程中遇到问题，以下途径或许可以帮到你：
+
+1. 本文档有一篇内容专门用于记录常见问题及解决方案：<a href="/guides/faq">FAQ</a>
+2. 在 GitHub 上提交 issue 向我们说明问题：<a href="https://github.com/bryqiu/vue-clean-admin/issues" target="_blank">Clean
+   Admin issues</a>
+
+:::note[推荐阅读]
+
+在提交 issue 之前，推荐你阅读这些内容：
+
+- [如何有效地报告 Bug](https://www.chiark.greenend.org.uk/%7Esgtatham/bugs-cn.html)
+- [如何向开源项目提交无法解答的问题](https://zhuanlan.zhihu.com/p/25795393)
+
+:::
+
+3. 加入 Clean Admin 交流群，同其他开发者交流经验
+
+## 鸣谢
+
+Clean Admin 的开发参考了许多优秀项目，在此表示感谢：
+
+- Vben Admin
+- Shadcn Admin
+- Art Design Pro
+
+## 许可证
+
+Clean
+Admin 使用<a href="https://github.com/bryqiu/vue-clean-admin/blob/main/LICENSE" target="\_blank">
+MIT</a> 许可证
