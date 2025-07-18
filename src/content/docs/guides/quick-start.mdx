@@ -1,0 +1,131 @@
+---
+title: 快速开始
+sidebar:
+  order: 2
+---
+
+import { LinkCard, Steps, CardGrid } from '@astrojs/starlight/components';
+
+本篇章主要讲解如何快速在本地运行起 Clean Admin
+
+## 前置知识
+
+在上一篇[项目简介](/guides/introduction/)中，我们列出了 Clean Admin 使用的大致技术生态
+
+后面的内容，我们默认你已经了解以上技术栈，并能熟练使用
+
+## 基本开发环境
+
+这一章节面向新手开发者，或者不熟悉前端的后端开发者，如果你已经有以下开发环境，请跳过本章节
+
+### Node 环境与版本
+
+ClanAdmin 使用的技术栈较新，因此你的 Node 环境需要支持 Node 18 或以上版本，这里推荐使用
+`v20.18.1(LTS)`，可以去到 [Node官方下载](https://nodejs.org/zh-cn/download)
+
+:::tip
+
+LTS 版本，全称 Long Time
+Support，表示长期维护的版本，强烈推荐你使用 LTS 版本，因为 LTS 版本会得到更稳定的支持和更广泛的使用
+
+:::
+
+安装完成后，使用命令行终端输入以下命令可以查看是否安装成功和版本
+
+```bash
+node -v
+```
+
+你也可以使用 nvm 来管理你的 Node 版本，相关内容请参照 [nvm GitHub](https://github.com/nvm-sh/nvm)
+
+### 包管理器
+
+<Steps>
+
+1. 在你安装了 Node.js 后，会默认安装 `npm` 包管理工具，可以通过以下来查看是否安装成功和版本：
+
+   ```bash
+   npm -v
+   ```
+
+2. 在 Clean Admin 中，我们只推荐你使用 pnpm 来管理项目依赖，并且版本不低于
+   `v9`，你可以使用 npm 来全局安装 pnpm：
+
+   ```bash
+   npm install -g pnpm@latest
+   ```
+
+   更多内容请参照 [pnpm 官网](https://pnpm.io/zh/installation)
+
+3. 安装完成后，查看 pnpm 版本：
+
+   ```bash
+   pnpm -v
+   ```
+
+4. 然后设置镜像，这对安装依赖时的速度有很大提升。这里以淘宝镜像为例：
+
+   ```bash
+   pnpm config set registry https://registry.npmmirror.com/
+   ```
+
+5. 查看镜像地址：
+
+   ```bash
+   pnpm config get registry # https://registry.npmmirror.com/
+   ```
+
+</Steps>
+
+### 代码编辑器
+
+Clean Admin 主要使用 `VSCode` 和 `Cursor` 作为代码编辑器，去到相关官网下载安装
+
+<CardGrid>
+<LinkCard href="https://code.visualstudio.com/" title="VSCode" target="_blank" />
+
+<LinkCard href="https://www.cursor.com/" title="Cursor" target="_blank" icon="cursor" />
+
+</CardGrid>
+
+项目中拥有一个 `.vscode`
+文件夹，里面包含了针对编辑器的配置，比如代码片段、格式化、代码提示、插件推荐等，在
+[.vscode 章节](/guides/vscode)中，我们会向你介绍这些内容
+
+### 浏览器
+
+推荐使用 `Chrome` 浏览器
+
+### Git 环境
+
+拥有 `git` 环境即可
+
+## 在本地运行项目
+
+确保拥有 Git 环境，并能正常使用 `git` 命令
+
+<Steps>
+1. 克隆项目到你的本地指定目录
+   ```bash
+   git clone https://github.com/bryqiu/vue-clean-admin.git
+   ```
+
+2. 进入项目目录
+   ```bash
+   cd vue-clean-admin
+   ```
+3. 安装依赖
+
+   ```bash
+   pnpm i
+   ```
+
+4. 启动项目
+
+   ```bash
+   pnpm dev
+   ```
+
+</Steps>
+
+## 启动项目遇到问题?
