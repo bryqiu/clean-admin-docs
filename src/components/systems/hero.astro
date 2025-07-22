@@ -1,0 +1,73 @@
+---
+import { Icon } from 'astro-icon/components';
+import { twMerge } from 'tailwind-merge';
+
+const btnBasicClass =
+  'px-8 py-2 flex items-center gap-x-4 text-sm font-medium border border-solid border-gray-300 bg-white  dark:bg-transparent rounded-md shadow text-gray-900 dark:text-white cursor-pointer  no-underline duration-300';
+---
+
+<section class="bg-background py-12 md:py-20">
+  <div class="overflow-hidden border-b border-muted">
+    <div class="container">
+      <div class="flex flex-col items-center gap-16 md:gap-24">
+        <div class="flex flex-col items-center gap-8">
+          <div class="flex flex-col items-center gap-7">
+            <div class="flex flex-col items-center gap-y-4">
+              <span
+                class="inline-flex items-center justify-center rounded-md border border-solid border-gray-300 px-2 py-0.5 text-xs font-medium"
+              >
+                v1.0.0
+              </span>
+              <h1
+                class="max-w-[920px] text-center text-4xl leading-tight font-semibold text-gray-900 dark:text-white md:text-6xl lg:text-7xl"
+              >
+                ✦ Vue Clean Admin
+                <br /> 现代化中后台解决方案
+              </h1>
+            </div>
+            <p
+              class="max-w-[750px] text-center text-base leading-relaxed font-normal text-gray-600 dark:text-gray-400 md:text-lg"
+            >
+              一套基于 Vue3 + Vite + TypeScript + Element Plus <br
+              />构建的中后台模板提供现代化中后台解决方案
+            </p>
+          </div>
+          <div class="mt-6 flex flex-col">
+            <div class="flex flex-col items-center gap-4 sm:flex-row">
+              <a
+                class={twMerge(
+                  btnBasicClass,
+                  ' bg-black text-white hover:bg-black/70 dark:hover:bg-gray-100/80 dark:bg-gray-100 dark:text-gray-900',
+                  'flex items-center justify-between',
+                )}
+                href="/guides/introduction/"
+              >
+                <span>即刻开始</span>
+                <Icon name="ri:arrow-right-long-line" class="text-sm" />
+              </a>
+              <a class={twMerge(btnBasicClass, 'hover:bg-gray-100/80')}>
+                <span>在线预览</span>
+                <Icon name="ri:share-box-line" class="text-sm" />
+              </a>
+            </div>
+            <div class="mt-4 flex items-center justify-center gap-x-4">
+              <a
+                href="https://github.com/bryqiu/vue-clean-admin"
+                target="_blank"
+                class="inline-flex items-center"
+              >
+                <img alt="stars" src="https://img.shields.io/github/stars/bryqiu/vue-clean-admin" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="size-full p-2 bg-gray-900 dark:bg-slate-700 rounded-xl">
+          <img
+            src="/src/assets/images/cover.png"
+            class="size-full object-cover object-center rounded-xl"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

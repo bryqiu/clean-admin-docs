@@ -4,31 +4,34 @@ import starlight from '@astrojs/starlight';
 import starlightThemeNova from 'starlight-theme-nova';
 import vue from '@astrojs/vue';
 import tailwind from '@astrojs/tailwind';
+import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [
     vue(),
+    icon({
+      iconDir: 'src/assets/icons',
+      include: {
+        ri: ['github-fill', 'eye-2-line', 'arrow-right-long-line', 'share-box-line'],
+      },
+    }),
     starlight({
       title: 'Clean Admin Docs',
       logo: {
         src: './src/assets/icons/logo.svg',
       },
-      social: [
-        { icon: 'github', label: 'GitHub', href: 'https://github.com/bryqiu/vue-clean-admin' },
-        {
-          icon: 'open-book',
-          label: '专栏',
-          href: 'https://github.com/bryqiu/Blog?tab=readme-ov-file#%E9%80%9A%E4%BF%97%E6%98%93%E6%87%82%E7%9A%84%E4%B8%AD%E5%90%8E%E5%8F%B0%E7%B3%BB%E7%BB%9F%E5%BB%BA%E8%AE%BE%E6%8C%87%E5%8D%97%E4%B8%93%E6%A0%8F',
-        },
-      ],
+      components: {
+        SocialIcons: './src/components/systems/project-social.astro',
+        Hero: './src/components/systems/hero.astro',
+      },
       locales: {
         root: {
           label: '简体中文',
           lang: 'zh',
         },
       },
-      customCss: ['./src/styles/tailwind.css'],
+      customCss: ['./src/styles/tailwind.css', './src/styles/global.css'],
       plugins: [starlightThemeNova()],
       lastUpdated: true,
       sidebar: [

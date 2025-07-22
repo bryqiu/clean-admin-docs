@@ -1,0 +1,48 @@
+---
+import { Icon } from 'astro-icon/components';
+import type { Social } from '../typings';
+
+interface Member {
+  name: string;
+  role: string;
+  avatar: string;
+  socialList: Social[];
+}
+
+export interface MemberProps {
+  memberList: Member[];
+}
+
+const { memberList = [] } = Astro.props as MemberProps;
+---
+
+{
+  memberList.map((member) => (
+    <div class="not-content rounded-2xl border border-solid border-slate-300 bg-transparent p-7 text-center flex flex-col justify-center gap-y-6">
+      <img
+        class="mx-auto size-20 rounded-full border border-solid border-slate-300"
+        src={member.avatar}
+        alt={member.name}
+      />
+      <div class="flex flex-col justify-center gap-y-2">
+        <p class="text-lg font-bold">{member.name}</p>
+        <p class="text-sm text-muted-foreground">{member.role}</p>
+      </div>
+      <div class="flex flex-col justify-center gap-y-4">
+        <div class="h-px w-full bg-slate-200 dark:bg-slate-700" />
+        <div class="flex items-center justify-center gap-x-2 ">
+          {member.socialList.map((social) => (
+            <a
+              href={social.link}
+              target="_blank"
+              class="p-2 flex items-center justify-center rounded-lg border border-solid border-slate-300 dark:border-slate-700 text-black dark:text-white"
+              aria-label={social.name}
+            >
+              <Icon name={social.iconName} />
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  ))
+}

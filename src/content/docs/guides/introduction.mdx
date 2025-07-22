@@ -5,6 +5,9 @@ sidebar:
 ---
 
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { Member as Author } from '@/components';
+import { Icon } from 'astro-icon/components';
+import { authorSocialList } from '@/config';
 
 ## 什么是 Vue Clean Admin？
 
@@ -122,7 +125,16 @@ Admin 过程中，我记录了部分内容并总结成专栏文章《通俗易�
 
 ## 作者
 
-- [@Bryan Qiu](https://github.com/bryqiu)
+export const author = [
+  {
+    name: 'Bryan Qiu(十五)',
+    role: '前端工程师 | 开源爱好者',
+    avatar: '/src/assets/images/user-avatar.jpg',
+    socialList: authorSocialList,
+  },
+];
+
+<Author memberList={author} />
 
 ## 参与贡献
 
