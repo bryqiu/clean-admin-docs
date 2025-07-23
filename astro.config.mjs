@@ -1,10 +1,9 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
-import starlight from '@astrojs/starlight';
-import starlightThemeNova from 'starlight-theme-nova';
-import vue from '@astrojs/vue';
-import tailwind from '@astrojs/tailwind';
-import icon from 'astro-icon';
+import starlight from '@astrojs/starlight'
+import tailwind from '@astrojs/tailwind'
+import vue from '@astrojs/vue'
+import icon from 'astro-icon'
+import { defineConfig } from 'astro/config'
+import starlightThemeNova from 'starlight-theme-nova'
 
 // https://astro.build/config
 export default defineConfig({
@@ -59,4 +58,4 @@ export default defineConfig({
     }),
     tailwind(),
   ],
-});
+})

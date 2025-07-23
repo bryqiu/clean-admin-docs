@@ -7,13 +7,13 @@
     },
     "types": ["astro/client"],
     "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "skipLibCheck": true,
     "strict": true,
+    "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noEmit": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
   },
   "include": [
     "src/**/*.ts",

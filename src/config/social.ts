@@ -1,4 +1,4 @@
-import type { Social } from '../typings';
+import type { Social } from '../typings'
 
 export const authorSocialList: Social[] = [
   {
@@ -11,7 +11,7 @@ export const authorSocialList: Social[] = [
     link: 'https://juejin.cn/user/343495027727229',
     name: 'juejin',
   },
-];
+]
 
 export const projectSocialList: Social[] = [
   {
@@ -29,4 +29,4 @@ export const projectSocialList: Social[] = [
     link: 'https://juejin.cn/column/7437267529330901026',
     name: '系列专栏',
   },
-];
+]

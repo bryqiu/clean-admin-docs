@@ -1,1 +1,1 @@
-export { authorSocialList, projectSocialList } from './social';
+export { authorSocialList, projectSocialList } from './social'

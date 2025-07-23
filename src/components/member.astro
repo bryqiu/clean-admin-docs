@@ -1,23 +1,23 @@
 ---
-import { Icon } from 'astro-icon/components';
-import type { Social } from '../typings';
+import type { Social } from '../typings'
+import { Icon } from 'astro-icon/components'
 
 interface Member {
-  name: string;
-  role: string;
-  avatar: string;
-  socialList: Social[];
+  name: string
+  role: string
+  avatar: string
+  socialList: Social[]
 }
 
 export interface MemberProps {
-  memberList: Member[];
+  memberList: Member[]
 }
 
 const { memberList = [] } = Astro.props as MemberProps;
 ---
 
 {
-  memberList.map((member) => (
+  memberList.map(member => (
     <div class="not-content rounded-2xl border border-solid border-slate-300 bg-transparent p-7 text-center flex flex-col justify-center gap-y-6">
       <img
         class="mx-auto size-20 rounded-full border border-solid border-slate-300"
@@ -31,7 +31,7 @@ const { memberList = [] } = Astro.props as MemberProps;
       <div class="flex flex-col justify-center gap-y-4">
         <div class="h-px w-full bg-slate-200 dark:bg-slate-700" />
         <div class="flex items-center justify-center gap-x-2 ">
-          {member.socialList.map((social) => (
+          {member.socialList.map(social => (
             <a
               href={social.link}
               target="_blank"
